@@ -68,7 +68,7 @@ def addStudent():
         State = raw_input("Enter State: ")
         ZipCode = raw_input("Enter Zipcode: ")
         MobilePhoneNumber = raw_input("Enter Phone Number: ")
-        isDeleted = input("Do you want to delete this student? ")
+        isDeleted = input("Do you want to delete this student(press 0)? ")
 
     else:
         studentID = input("Enter StudentId: ")
@@ -90,7 +90,7 @@ def addStudent():
         #State = input("Enter State: ")
         ZipCode = input("Enter Zipcode: ")
         MobilePhoneNumber = input("Enter Phone Number: ")
-        isDeleted = input("Do you want to delete this student? ")
+        isDeleted = input("Do you want to delete this student?(press 0) ")
 
 
     insert_query = "INSERT INTO Student (studentId, FirstName, LastName, GPA, Major, FacultyAdvisor, Address, City, State, ZipCode, MobilePhoneNumber,isDeleted) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?,?)"
